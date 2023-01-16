@@ -1,0 +1,18 @@
+{
+  "name": "agora-app-builder",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "agora-app-builder-cli",
+    "start:info": "agora-app-builder-cli --info",
+    "start:update": "agora-app-builder-cli --updating",
+    "ci": "agora-app-builder-cli install && agora-app-builder-cli import && agora-app-builder-cli build web --prod && cp agorabuilder/vercel.json Builds/web"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "agora-app-builder-cli": "^2.0.9"
+  }
+}
